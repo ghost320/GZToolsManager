@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 s.name= "GZToolsManager"
 
 #版本号
-s.version= "0.0.6"
+s.version= "0.0.7"
 
 #介绍
 s.summary= "整理一些自己平时收集或编写的一些小工具."
