@@ -139,7 +139,7 @@ extension UIView
             {
                 if nextResponder.isKind(of: UIViewController.self)
                 {
-                    return nextResponder as! UIViewController
+                    return nextResponder as UIViewController
                 }
                 next = next?.superview
             }
