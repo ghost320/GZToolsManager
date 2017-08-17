@@ -4,7 +4,7 @@
 //
 //  Created by somethingbig on 2017/7/3.
 //  Copyright © 2017年 somethingbig. All rights reserved.
-//
+//  播放序列帧
 
 import UIKit
 

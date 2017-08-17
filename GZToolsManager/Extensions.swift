@@ -4,7 +4,7 @@
 //
 //  Created by Ghost on 2016/12/18.
 //  Copyright © 2016年 ghost. All rights reserved.
-//
+//  各种扩展小功能
 import QuartzCore
 import CoreImage
 import UIKit
@@ -128,6 +128,23 @@ extension UIView
             }
         }
         return true
+    }
+    
+    ///获取当前view的controller
+    func  viewController() -> UIViewController?
+    {
+        var next:UIView? = self
+        repeat{
+            if let nextResponder = next?.next
+            {
+                if nextResponder.isKind(of: UIViewController.self)
+                {
+                    return nextResponder as! UIViewController
+                }
+                next = next?.superview
+            }
+        }while next != nil
+        return nil
     }
 }
 
